@@ -1,4 +1,4 @@
-# n23-winston-logger
+# n23-logger
 
 A Winston Logger
 
