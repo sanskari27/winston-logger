@@ -1,0 +1,37 @@
+{
+	"name": "winston-logger",
+	"version": "1.0.0",
+	"description": "Logger utils for winston",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sanskar85/winston-logger.git"
+	},
+	"author": "sanskar85",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sanskar85/winston-logger/issues"
+	},
+	"homepage": "https://github.com/sanskar85/winston-logger#readme",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@sanskar85"
+	},
+	"devDependencies": {
+		"ts-node": "^10.9.1",
+		"tsup": "^7.3.0",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"winston": "^3.11.0",
+		"winston-daily-rotate-file": "^4.7.1"
+	}
+}
