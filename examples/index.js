@@ -1,4 +1,5 @@
 const Logger = require('../dist').default;
+import Logger from '../dist';
 
 Logger.info(
 	'STATE',
@@ -132,10 +133,3 @@ Logger.debug('Line 17 User Object:', {
  *  }
  *
  */
-
-const n1 = 'Sanskar Prashansa';
-let sum = 0;
-for (let i = 0; i < n1.length; i++) {
-	sum += n1.charCodeAt(i);
-}
-console.log(sum);

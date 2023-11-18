@@ -1,5 +1,5 @@
 {
-	"name": "winston-logger",
+	"name": "n23-logger",
 	"version": "1.0.0",
 	"description": "Logger utils for winston",
 	"main": "./dist/index.js",
@@ -22,9 +22,6 @@
 		"url": "https://github.com/sanskar85/winston-logger/issues"
 	},
 	"homepage": "https://github.com/sanskar85/winston-logger#readme",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/@sanskar85"
-	},
 	"devDependencies": {
 		"ts-node": "^10.9.1",
 		"tsup": "^7.3.0",
