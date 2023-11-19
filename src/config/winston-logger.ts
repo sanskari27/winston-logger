@@ -54,7 +54,11 @@ const logger = winston.createLogger({
 		}),
 		new FileLogger({
 			level: LEVEL.HTTP,
-			filename: `logs/${LEVEL.HTTP.toLowerCase()}-%DATE%.log`,
+			datePattern: 'YYYY-MM-DD',
+			zippedArchive: true,
+			maxSize: '20m',
+			maxFiles: '1d',
+			filename: `logs/http-logs/${LEVEL.HTTP.toLowerCase()}-%DATE%.log`,
 			format: prettyPrint(),
 		}),
 		new FileLogger({
