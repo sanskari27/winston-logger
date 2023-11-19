@@ -44,12 +44,12 @@ const logger = winston.createLogger({
 		}),
 		new FileLogger({
 			level: LEVEL.CRITICAL,
-			filename: `logs/${LEVEL.CRITICAL.toLowerCase()}-%DATE%.log`,
+			filename: `logs/critical/${LEVEL.CRITICAL.toLowerCase()}-%DATE%.log`,
 			format: prettyPrint(),
 		}),
 		new FileLogger({
 			level: LEVEL.ERROR,
-			filename: `logs/${LEVEL.ERROR.toLowerCase()}-%DATE%.log`,
+			filename: `logs/error/${LEVEL.ERROR.toLowerCase()}-%DATE%.log`,
 			format: prettyPrint(),
 		}),
 		new FileLogger({
@@ -58,12 +58,12 @@ const logger = winston.createLogger({
 			zippedArchive: true,
 			maxSize: '20m',
 			maxFiles: '1d',
-			filename: `logs/http-logs/${LEVEL.HTTP.toLowerCase()}-%DATE%.log`,
+			filename: `logs/http/${LEVEL.HTTP.toLowerCase()}-%DATE%.log`,
 			format: prettyPrint(),
 		}),
 		new FileLogger({
 			level: LEVEL.INFO,
-			filename: `logs/${LEVEL.INFO.toLowerCase()}-%DATE%.log`,
+			filename: `logs/info/${LEVEL.INFO.toLowerCase()}-%DATE%.log`,
 			format: json(),
 		}),
 	],
