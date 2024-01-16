@@ -57,7 +57,7 @@ const logger = winston.createLogger({
 			datePattern: 'YYYY-MM-DD',
 			zippedArchive: true,
 			maxSize: '20m',
-			maxFiles: '1d',
+			maxFiles: '10d',
 			filename: `logs/http/${LEVEL.HTTP.toLowerCase()}-%DATE%.log`,
 			format: prettyPrint(),
 		}),
